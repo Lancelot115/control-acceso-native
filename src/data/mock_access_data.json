@@ -1,0 +1,30 @@
+{
+  "students": [
+    { "id": "E001", "name": "Ana García López", "career": "Ingeniería de Sistemas", "photo": "https://i.pravatar.cc/150?img=1", "status": "active", "vehicle": "ABC-123", "vehicleType": "car" },
+    { "id": "E002", "name": "Carlos Mendoza Ríos", "career": "Administración", "photo": "https://i.pravatar.cc/150?img=2", "status": "active", "vehicle": null, "vehicleType": null },
+    { "id": "E003", "name": "Lucía Torres Vega", "career": "Derecho", "photo": "https://i.pravatar.cc/150?img=3", "status": "suspended", "vehicle": "XYZ-789", "vehicleType": "motorcycle" },
+    { "id": "E004", "name": "Miguel Ángel Pérez", "career": "Medicina", "photo": "https://i.pravatar.cc/150?img=4", "status": "active", "vehicle": "DEF-456", "vehicleType": "car" },
+    { "id": "E005", "name": "Valeria Castro Núñez", "career": "Psicología", "photo": "https://i.pravatar.cc/150?img=5", "status": "active", "vehicle": null, "vehicleType": null },
+    { "id": "E006", "name": "Andrés Salinas Mora", "career": "Arquitectura", "photo": "https://i.pravatar.cc/150?img=6", "status": "inactive", "vehicle": "GHI-321", "vehicleType": "car" },
+    { "id": "E007", "name": "Daniela Rojas Fuentes", "career": "Contabilidad", "photo": "https://i.pravatar.cc/150?img=7", "status": "active", "vehicle": null, "vehicleType": null },
+    { "id": "E008", "name": "Fernando Gutiérrez Alba", "career": "Ingeniería Civil", "photo": "https://i.pravatar.cc/150?img=8", "status": "active", "vehicle": "JKL-654", "vehicleType": "car" }
+  ],
+  "access_records": [
+    { "id": "R001", "studentId": "E001", "type": "entry", "method": "pedestrian", "timestamp": "2025-05-27T08:15:00Z", "gate": "Entrada Principal", "authorized": true },
+    { "id": "R002", "studentId": "E004", "type": "entry", "method": "vehicle", "vehicle": "DEF-456", "timestamp": "2025-05-27T08:22:00Z", "gate": "Entrada Vehicular", "authorized": true },
+    { "id": "R003", "studentId": "E003", "type": "entry", "method": "vehicle", "vehicle": "XYZ-789", "timestamp": "2025-05-27T08:30:00Z", "gate": "Entrada Vehicular", "authorized": false },
+    { "id": "R004", "studentId": "E002", "type": "entry", "method": "pedestrian", "timestamp": "2025-05-27T08:45:00Z", "gate": "Entrada Principal", "authorized": true },
+    { "id": "R005", "studentId": "E005", "type": "entry", "method": "pedestrian", "timestamp": "2025-05-27T09:00:00Z", "gate": "Entrada Principal", "authorized": true },
+    { "id": "R006", "studentId": "E001", "type": "exit", "method": "pedestrian", "timestamp": "2025-05-27T12:30:00Z", "gate": "Entrada Principal", "authorized": true },
+    { "id": "R007", "studentId": "E007", "type": "entry", "method": "pedestrian", "timestamp": "2025-05-27T09:15:00Z", "gate": "Entrada Principal", "authorized": true },
+    { "id": "R008", "studentId": "E008", "type": "entry", "method": "vehicle", "vehicle": "JKL-654", "timestamp": "2025-05-27T09:20:00Z", "gate": "Entrada Vehicular", "authorized": true },
+    { "id": "R009", "studentId": "E006", "type": "entry", "method": "vehicle", "vehicle": "GHI-321", "timestamp": "2025-05-27T09:35:00Z", "gate": "Entrada Vehicular", "authorized": false },
+    { "id": "R010", "studentId": "E002", "type": "exit", "method": "pedestrian", "timestamp": "2025-05-27T13:00:00Z", "gate": "Entrada Principal", "authorized": true }
+  ],
+  "stats": {
+    "totalEntries": 8,
+    "totalExits": 2,
+    "denied": 2,
+    "vehiclesInside": 2
+  }
+}
