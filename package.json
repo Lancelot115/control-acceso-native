@@ -41,6 +41,8 @@
     "reset-project": "node ./scripts/reset-project.js",
     "android": "expo start --android",
     "ios": "expo start --ios",
+    "predeploy": "npx expo export --platform web",
+  "deploy": "gh-pages -d dist",
     "web": "expo start --web",
     "lint": "expo lint"
   },
